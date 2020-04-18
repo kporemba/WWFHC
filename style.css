@@ -1,0 +1,342 @@
+body {
+    width: 100%;
+    margin: 0;
+}
+#banner {
+    width: 100%;
+    padding-top: 58px;
+    display: block;
+}
+
+/* Navigation Bar */
+#nav {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    position: fixed;
+}
+a.button {
+    color: white; 
+    text-decoration: none;
+    margin-right: 20px;
+    width: 100%;
+}
+a:hover {color:#F7D129}
+#alive {color: #F7D129;}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: white;
+    padding-right: 20px;
+    z-index: 1;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    background-color: black;
+    color: white;
+    background-color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #F7D129;
+    z-index: 1;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 1;
+}
+
+
+/* Home Page */
+#mission {
+    width: 100%;
+    display: block;
+    float: right;
+    padding: 0px;
+    position: relative;
+    z-index: -1;
+}
+#about {
+    float: center;
+    text-align: center;
+    display: inline-block;
+    z-index:-1;
+    padding: 20px;
+}
+.left {
+    margin: 10px;
+    padding: 10px;
+    background-color: #F7D129;
+    color: white;
+    left: 300;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 0;
+}
+.right {
+    margin: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #F7D129;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 0;
+}
+.mySlides {display: inline-block;}
+.w3-content {
+    position: relative;
+    z-index: -2;
+}
+#name {
+    padding-top: 59px;
+    z-index: 0;
+}
+
+
+/* League Play */
+#recreational {
+    display: inline-block;
+    width: 47%;
+    float: left;
+    padding: 5px;
+    padding-left: 20px;
+}
+h1 {
+    float: center;
+    color: #077638;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+h2 {
+    color: #F7D129;
+    font-family: 'Roboto', sans-serif;
+}
+h3 {
+    float: center;
+    color: #077638;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em;
+    padding-bottom: 10px;
+}
+#competitive {
+    display: inline-block;
+    width: 45%;
+    float: right;
+    padding: 5px;
+    padding-right: 19px;
+}
+#banner {
+    width: 100%;
+}
+#directions {
+    width: 100%;
+    float: left;
+}
+#directions2 {
+    width: 100%;
+    float: right;
+    text-align: center;
+}
+.mapouter {
+    position:relative;
+    text-align:center;
+    height:100%;
+    width:100%;
+    z-index: 0;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:100%;
+    width: 100%;
+    z-index: 0;
+}
+
+
+/* Tournament Pages & Coaching */
+#img {
+    display: inline-block;
+    float: left;
+    padding: 20px;
+    width: 45%;
+    padding-bottom: 20px;
+}
+#text {
+    padding-right: 20px;
+    display: block;
+    float: right;
+    width: 45%;
+}
+
+
+/* Umpiring Clinics */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+th {
+    background-color: #077638;
+    color: white;
+}
+#body {
+    padding: 20px;
+}
+
+
+/* Calendar */
+.big-container {
+    padding-left: 20%;
+}
+
+
+/* Contact Us */
+#contact {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#team {
+    display: inline-block;
+    float: center;
+    padding-left: 40px;
+    padding-right: 20px;
+    width: 90%;
+}
+
+
+/* Responsive Web Design */
+@media (max-width: 600px) {
+     .big-container {
+         display: none;
+     }
+ }
+@media (min-width: 600px) {
+     .small-container {
+         display: none;
+     }
+ }
+
+/* Responsive iFrame */
+ .responsive-iframe-container {
+     position: relative;
+     padding-bottom: 36em;
+     padding-top: 30px;
+     height: 0;
+     overflow: hidden;
+ }
+ .responsive-iframe-container iframe,   
+ .vresponsive-iframe-container object,  
+ .vresponsive-iframe-container embed {
+     position: absolute;
+     top: 0;
+     left: 0;
+ }
+
+@media screen and (max-width: 600px) {
+    #recreational {
+        display: block;
+        width: 90%;
+        float: left;
+        padding: 5px;
+        padding-left: 20px;
+        font-size: 1em;
+    }
+    #competitive {
+        display: block;
+        width: 90%;
+        float: right;
+        padding: 5px;
+        padding-right: 19px;
+        font-size: 1em;
+    }
+    h1 {
+        float: center;
+        color: #077638;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3em;
+    }
+    h2 {
+        color: #F7D129;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+    }
+    p {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 14px;
+        padding-bottom: 10px;
+        font-size: 1em;
+    }
+    #img {
+        display: block;
+        float: center;
+        padding: 20px;
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    #text {
+        padding-right: 20px;
+        display: block;
+        float: right;
+        width: 90%;
+        font-size: 16px;
+    }
+    .left2 {
+        margin: 10px;
+        padding: 10px;
+        background-color: #F7D129;
+        color: white;
+        position: absolute;
+        left: 0;
+        top: 55%;
+        z-index: 1;
+    }
+    .right2 {
+        margin: 10px;
+        margin: 10px;
+        padding: 10px;
+        background-color: #F7D129;
+        color: white;
+        position: absolute;
+        left: 9%;
+        top: 55%;
+        z-index: 1;
+    }
+    #team {
+        width: 100%;
+        padding-left: 0;
+    }
+}

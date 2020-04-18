@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="images/logo2.png"/> 
+        <title>WWFHC</title>
+        <link rel="Stylesheet" href="style.css" type="text/css"> 
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto|Roboto+Condensed" rel="stylesheet">
+    </head>
+    <body>
+        <div id="nav"> 
+            <a id="alive" href="Homepage.html" class="button">ABOUT</a>
+            <a href="League/League.html" class="button">LEAGUE PLAY</a>
+                <div class="dropdown">
+                    <a class="dropbtn">TOURNAMENT PLAY</a>
+                        <div class="dropdown-content">
+                            <a href="KWschoolgirl/KWschoolgirl.html">KW SCHOOLGIRLS</a>
+                            <a href="Springfield/Springfield.html">SPRINGFIELD</a>
+                            <a href="Summerturf/Summerturf.html">SUMMER TURF</a>
+                        </div>
+                </div>
+            <a href="Umpiring/Umpiring.html" class="button">UMPIRING CLINICS</a>
+            <a href="Coaching/Coaching.html" class="button">COACHING CLINICS</a>
+            <a href="Calendar/Calendar.html" class="button">CALENDAR</a>
+            <a href="Contact/Contact.html" class="button">CONTACT US</a>
+        </div>
+        
+        <div id="name">
+        <img id="mission" src="images/Homepage.jpg">
+        </div>
+        
+        <div id=about> 
+       <h1>ABOUT US</h1>
+        <p>Welcome to Waterloo Women's Field Hockey Club website! We are a non for profit club organisation that runs in the KW region bringing outdoor and indoor field hockey to girls and women aged 13 and up. We run a competitive, and recreational league in the summer, an indoor team in the winter, umpiring clinics, coaching clinics, and a variety of competitive tournaments for a variety of age groups throughout the year. We love a good game of field hockey, and hope you’ll come out to join us next season.</p>
+        
+            <! -- start of code from W3Schools for the slideshow --> 
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src="images/home2.png" style="width:100%">
+            <img class="mySlides" src="images/home3.jpg" style="width:100%">
+            <img class="mySlides" src="images/home4.png" style="width:100%">
+
+            <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }  
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+         <! -- end of code from W3Schools for the slideshow --> 
+        </div>
+    </body>
+</html>
